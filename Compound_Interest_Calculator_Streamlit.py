@@ -115,7 +115,7 @@ elif choice == "Simple Interest Calculator":
 else:
     st.write("""
 #    Creator: Ish Kapoor
-##   This Web Application can be found at: ''
+##   This Web Application can be found at: 'https://github.com/ishkapoor2000/Interest-Calculator'
 ###  Enjoy!
     """)
     isNotHome = False
