@@ -89,9 +89,15 @@ if choice == "Home":
     image = Image.open('Simple Interest Compound Interest Formula.jpg')
     st.image(image, use_column_width=True)
     isNotHome = False
+    st.write("Principal amount")
+    st.write(df.Principal)
+    st.write("Rate of Interest")
+    st.write(df.Int_Rate)
+    st.write("Number of years")
+    st.write(df.No_Of_Years)
 
 elif choice == "Compound Interest Calculator":
-    st.subheader('User enetered parameters for Rate, Principal amount and ')
+    st.subheader('User enetered parameters for Rate of Interest, Principal amount and Number of Years')
     st.write(df)
     st.subheader('The calcuated compound interest is:')
     df_1 = Compound_Interest(df.Principal, df.Int_Rate, df.No_Of_Years)
@@ -99,7 +105,7 @@ elif choice == "Compound Interest Calculator":
     isNotHome = True
 
 elif choice == "Simple Interest Calculator":
-    st.subheader('User enetered parameters for Rate, Principal amount and ')
+    st.subheader('User enetered parameters for Rate of Interest, Principal amount and Number of Years')
     st.write(df)
     st.subheader('The calcuated simple interest is:')
     df_2 = Simple_Interest(df.Principal, df.Int_Rate, df.No_Of_Years)
@@ -107,5 +113,9 @@ elif choice == "Simple Interest Calculator":
     isNotHome = True
 
 else:
-    st.write('Enjoy!')
+    st.write("""
+#    Creator: Ish Kapoor
+##   This Web Application can be found at: ''
+###  Enjoy!
+    """)
     isNotHome = False
